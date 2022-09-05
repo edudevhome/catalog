@@ -9,7 +9,7 @@ import br.com.catalogo.model.Category;
 import br.com.catalogo.repository.CategoryRepository;
 
 @SpringBootApplication
-public class CatalogoApplication implements CommandLineRunner{
+public class CatalogoApplication implements CommandLineRunner{ 
 
 	@Autowired
 	CategoryRepository categoryRepository;
