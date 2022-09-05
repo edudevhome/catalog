@@ -14,7 +14,7 @@ import br.com.catalogo.model.Category;
 import br.com.catalogo.repository.CategoryRepository;
 
 @RestController
-@RequestMapping("/category")
+@RequestMapping("/categories")
 public class CategoryController {
 	
 	@Autowired
