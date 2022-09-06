@@ -1,6 +1,5 @@
 package br.com.catalogo.controller;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,7 +33,7 @@ public class ProductController {
 	@GetMapping("/{idProduct}")
 	public ResponseEntity<Product> findById(@PathVariable Long idProduct) {
 
-		Product Product = ProductRepository.findById(idProduct);
+		Product Product = ProductRepository.findById(idProduct).get();
 		return ResponseEntity.ok().body(Product);
 	}
 

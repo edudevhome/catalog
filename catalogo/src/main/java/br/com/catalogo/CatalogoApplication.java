@@ -31,16 +31,16 @@ public class CatalogoApplication implements CommandLineRunner{
 		
 		
 		
-		Category category = new Category(1L, "Eletronics");
-		Category category1 = new Category(2L, "Books");
-		Category category2 = new Category(3L, "Foods");
+		Category category = new Category(null, "Eletronics");
+		Category category1 = new Category(null, "Books");
+		Category category2 = new Category(null, "Foods");
 		
-		Product p1 = new Product(1L, "TV", 2200.00, category);
-		Product p2 = new Product(2L, "Domain Driven Design", 120.00, category1);
-		Product p3 = new Product(3L, "PS5", 2800.00, category);
-		Product p4 = new Product(4L, "Docker", 100.00, category1);
-		Product p5 = new Product(5L, "Pão kg", 10.00, category2);
-		Product p6 = new Product(6L, "Stella Artois", 35.00, category2);
+		Product p1 = new Product(null, "TV", 2200.00, category);
+		Product p2 = new Product(null, "Domain Driven Design", 120.00, category1);
+		Product p3 = new Product(null, "PS5", 2800.00, category);
+		Product p4 = new Product(null, "Docker", 100.00, category1);
+		Product p5 = new Product(null, "Pão kg", 10.00, category2);
+		Product p6 = new Product(null, "Stella Artois", 35.00, category2);
 		
 		category.getProducts().addAll(Arrays.asList(p1, p3));
 		category1.getProducts().addAll(Arrays.asList(p2, p4));

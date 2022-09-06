@@ -1,6 +1,5 @@
 package br.com.catalogo.controller;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,7 +33,7 @@ public class CategoryController {
 	@GetMapping("/{idCategory}")
 	public ResponseEntity<Category> findById(@PathVariable Long idCategory) {
 
-		Category category = categoryRepository.findById(idCategory);
+		Category category = categoryRepository.findById(idCategory).get();
 		return ResponseEntity.ok().body(category);
 	}
 
